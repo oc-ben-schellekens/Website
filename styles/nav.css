@@ -1,4 +1,13 @@
 nav {
     width: 100vw;
-    height: 1vh;
+    height: 6vh;
+    
+    h4 {
+        height: 100%;
+        width: max-content;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
