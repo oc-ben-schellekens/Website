@@ -8,7 +8,19 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/nav.css">
-    
+    <script type="module" defer>
+        import marquee from 'https://cdn.jsdelivr.net/npm/vanilla-marquee/dist/vanilla-marquee.js';
+
+        var marquees = document.getElementsByClassName("marquee");
+        for (let index = 0; index < marquees.length; index++) {
+            const element = marquees[index];
+            new marquee( marquees[index], {
+                duplicated: true,
+                gap:        0,
+                speed:      200,
+            });
+        }
+    </script>
 </head>
     <body onload="document.getElementById('body').style.filter = 'blur(0)'" id="body">
         <nav>
@@ -17,11 +29,11 @@
             </a>
         </nav>
         <div class="links">
-            <div class="pagelink" id="1"><a href="#">MANAAKITANGA</a></div>
-            <div class="pagelink" id="2"><a href="#">PURSUING GROWTH</a></div>
-            <div class="pagelink" id="3"><a href="#">WHANAUNGATANGA</a></div>
-            <div class="pagelink" id="4"><a href="#">VALUING DIVERSITY</a></div>
-            <div class="pagelink" id="5"><a href="#">KAITIAKITANGA</a></div>
+            <div class="pagelink" id="one"><div class="marquee"><a href="#">MANAAKITANGA   </a></div></div>
+            <div class="pagelink" id="two"><div class="marquee"><a href="#">PURSUING GROWTH   </a></div></div>
+            <div class="pagelink" id="thr"><div class="marquee"><a href="#">WHANAUNGATANGA   </a></div></div>
+            <div class="pagelink" id="fou"><div class="marquee"><a href="#">VALUING DIVERSITY   </a></div></div>
+            <div class="pagelink" id="fiv"><div class="marquee"><a href="#">KAITIAKITANGA   </a></div></div>
         </div>
     </body>
 </html>
