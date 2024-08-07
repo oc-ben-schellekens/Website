@@ -5,6 +5,7 @@ body {
     filter: blur(10px);
     transition: all 500ms;
     height: 100vh;
+    overflow-y: hidden;
 }
 
 a{
@@ -21,7 +22,7 @@ a::after {
     height: 0.1em;
     background-color: white;
     left: 0;
-    bottom: 0;
+    bottom: -0.1em;
     content: "";
     transform-origin: right;
     scale: 0 1;
@@ -37,7 +38,7 @@ a:hover::after {
 
 .pagelink {
     font-size: 15.3vh;
-    height: 15.3vh;
+    height: 17vh;
     font-weight: 700;
     text-wrap: nowrap;
     width: 75vw;
@@ -51,7 +52,7 @@ a:hover::after {
     }
     .marquee {
         position: relative;
-        height: 15.3vh;
+        height: 15.9vh;
         opacity: 0;
         color: #00000000;
         transition: opacity 500ms;
@@ -95,3 +96,21 @@ nav h1 {
     left: 23%;
 }
 
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 25vh;
+    width: 100%;
+    background-color: black;
+    box-shadow: none;
+    z-index: 999;
+    transition: bottom 1s;
+}
+
+footer[data-open="0"] {
+    bottom: -23vh;
+}
+
+footer[data-open="1"] {
+    bottom: 0;
+}

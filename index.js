@@ -1,5 +1,15 @@
-const body = document.getElementById("body")
+const footer = document.getElementById("footer")
 
-function loaded() {
-    body.style.filter = "blur(0px)"
-}
+footer.addEventListener("click", (event) => {
+    switch (footer.dataset.open) {
+        case "0":
+            console.log(footer.dataset.open);
+            break;
+        
+        case "1":
+            console.log(footer.dataset.open);
+            break
+        default:
+            break;
+    }
+});
