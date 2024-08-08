@@ -8,19 +8,8 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/nav.css">
-    <script type="module" defer>
-        import marquee from 'https://cdn.jsdelivr.net/npm/vanilla-marquee/dist/vanilla-marquee.js';
-
-        var marquees = document.getElementsByClassName("marquee");
-        for (let index = 0; index < marquees.length; index++) {
-            const element = marquees[index];
-            new marquee( marquees[index], {
-                duplicated: true,
-                gap:        0,
-                speed:      200,
-            });
-        }
-    </script>
+    <title>Onslow college values</title>
+    <script src="https://unpkg.com/htmx.org@2.0.1" integrity="sha384-QWGpdj554B4ETpJJC9z+ZHJcA/i59TyjxEPXiiUgN2WmTyV5OEZWCD6gQhgkdpB/" crossorigin="anonymous"></script>
     <script src="index.js" defer></script>
 </head>
     <body onload="document.getElementById('body').style.filter = 'blur(0)'" id="body">
@@ -30,11 +19,11 @@
             </a>
         </nav>
         <div class="links">
-            <div class="pagelink" id="one"><div class="marquee"><a href="#">MANAAKITANGA | </a></div></div>
-            <div class="pagelink" id="two"><div class="marquee"><a href="#">PURSUING GROWTH | </a></div></div>
-            <div class="pagelink" id="thr"><div class="marquee"><a href="#">WHANAUNGATANGA | </a></div></div>
-            <div class="pagelink" id="fou"><div class="marquee"><a href="#">VALUING DIVERSITY | </a></div></div>
-            <div class="pagelink" id="fiv"><div class="marquee"><a href="#">KAITIAKITANGA | </a></div></div>
+            <div class="pagelink" id="one" data-open="0"><a href="#">MANAAKITANGA</a></div>
+            <div class="pagelink" id="two" data-open="0"><a href="#">PURSUING GROWTH</a></div>
+            <div class="pagelink" id="thr" data-open="0"><a href="#">WHANAUNGATANGA</a></div>
+            <div class="pagelink" id="fou" data-open="0"><a href="#">VALUING DIVERSITY</a></div>
+            <div class="pagelink" id="fiv" data-open="0"><a href="#">KAITIAKITANGA</a></div>
         </div>
         <footer data-open="0" id="footer">
 

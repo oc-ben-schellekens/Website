@@ -41,7 +41,7 @@ a:hover::after {
     height: 17vh;
     font-weight: 700;
     text-wrap: nowrap;
-    width: 75vw;
+    width: fit-content;
     overflow: hidden;
     background-color: orange;
     margin-bottom: 1vh;
@@ -49,19 +49,19 @@ a:hover::after {
     
     a {
         height: 15.3vh;
-    }
-    .marquee {
-        position: relative;
-        height: 15.9vh;
+        width: 100%;
         opacity: 0;
-        color: #00000000;
-        transition: opacity 500ms;
+        transition: opacity 500ms, filter 1s;
+        filter: blur(20px);
     }
+    
 }
 
 .pagelink:hover {
-    .marquee {
+    cursor: pointer;
+    a {
         opacity: 1;
+        filter: blur(0px);
     }
 }
 
@@ -85,15 +85,15 @@ nav h1 {
 }
 
 #thr {
-    left: 30%;
+    left: 16%;
 }
 
 #fou {
-    left: 25%;
+    left: 8%;
 }
 
 #fiv {
-    left: 23%;
+    left: 35%;
 }
 
 footer {
@@ -113,4 +113,24 @@ footer[data-open="0"] {
 
 footer[data-open="1"] {
     bottom: 0;
+}
+
+#one {
+    left: 15%;
+}
+
+#two {
+    left: 5%;
+}
+
+#thr {
+    left: 16%;
+}
+
+#fou {
+    left: 8%;
+}
+
+#fiv {
+    left: 35%;
 }
