@@ -5,7 +5,7 @@ body {
     filter: blur(10px);
     transition: all 500ms;
     height: 100vh;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 a{
@@ -22,7 +22,7 @@ a::after {
     height: 0.1em;
     background-color: white;
     left: 0;
-    bottom: -0.1em;
+    bottom: 0em;
     content: "";
     transform-origin: right;
     scale: 0 1;
@@ -37,28 +37,29 @@ a:hover::after {
 }
 
 .pagelink {
-    font-size: 15.3vh;
-    height: 17vh;
+    font-size: clamp(3rem, 7.5vw, 59.5rem);
+    height: clamp(3.5rem, 8vw, 60rem);
     font-weight: 700;
     text-wrap: nowrap;
     width: fit-content;
     overflow: hidden;
-    background-color: orange;
-    margin-bottom: 1vh;
+    background-color: white;
+    margin-bottom: 1vw;
     position: relative;
-    
+    transition: opacity 500ms;
     a {
-        height: 15.3vh;
+        height: 100%;
         width: 100%;
-        opacity: 0;
-        transition: opacity 500ms, filter 1s;
-        filter: blur(20px);
+        opacity: 0.5;
+        transition: opacity 500ms, filter 250ms;
+        filter: blur(0.4vw);
     }
     
 }
 
 .pagelink:hover {
     cursor: pointer;
+    background-color: orange;
     a {
         opacity: 1;
         filter: blur(0px);
@@ -116,7 +117,7 @@ footer[data-open="1"] {
 }
 
 #one {
-    left: 15%;
+    left: 30%;
 }
 
 #two {
