@@ -1,0 +1,156 @@
+.main {
+    height: 45vh;
+    width: 45vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    background-color: black;
+    z-index: -2;
+}
+
+.main[data-block-layout="0"] {
+    #one {
+        left: 0%;
+        top: 0%;
+        height: 100%;
+        width: 20%;
+    }
+    #two {
+        left: 20%;
+        top: 40%;
+        height: 60%;
+        width: 50%;
+    }
+    #three {
+        left: 40%;
+        top: 60%;
+        height: 40%;
+        width: 60%;
+    }
+    #four {
+        left: 20%;
+        top: 0%;
+        height: 40%;
+        width: 40%;
+    }
+    #five {
+        left: 60%;
+        top: 0%;
+        height: 60%;
+        width: 40%;
+
+    }
+}
+
+.main[data-block-layout="1"] {
+    #one {
+        left: 0%;
+        top: 0%;
+        height: 40%;
+        width: 60%;
+    }
+    #two {
+        left: 60%;
+        top: 0%;
+        height: 100%;
+        width: 40%;
+    }
+    #three {
+        left: 40%;
+        top: 60%;
+        height: 40%;
+        width: 60%;
+    }
+    #four {
+        left: 25%;
+        top: 30%;
+        height: 40%;
+        width: 50%;
+    }
+    #five {
+        left: 0%;
+        top: 40%;
+        height: 60%;
+        width: 60%;
+    }
+}
+
+.main[data-block-layout="2"] {
+    #one {
+        left: 20%;
+        top: 30%;
+        height: 70%;
+        width: 30%;
+    }
+    #two {
+        left: 50%;
+        top: 10%;
+        height: 80%;
+        width: 10%;
+    }
+    #three {}
+    #four {}
+    #five {}
+}
+
+.main[data-block-layout="3"] {
+    #one {}
+    #two {}
+    #three {}
+    #four {}
+    #five {}
+}
+
+.main[data-block-layout="4"] {
+    #one {}
+    #two {}
+    #three {}
+    #four {}
+    #five {}
+}
+
+.main[data-block-layout="test"] {
+    #one {
+        left: 0%;
+        top: 0%;
+        height: 0%;
+        width: 0%;
+    }
+    #two {
+        left: 0%;
+        top: 0%;
+        height: 0%;
+        width: 0%;
+    }
+    #three {
+        left: 0%;
+        top: 0%;
+        height: 0%;
+        width: 0%;
+    }
+    #four {
+        left: 0%;
+        top: 0%;
+        height: 0%;
+        width: 0%;
+    }
+    #five {
+        left: 0%;
+        top: 0%;
+        height: 0%;
+        width: 0%;
+    }
+}
+
+.block {
+    transition: left 500ms, top 500ms, height 500ms, width 500ms;
+    position: absolute;
+    cursor: pointer;
+}
+
+#one {background-color: green;}
+#two {background-color: lime;}
+#three {background-color: blue;}
+#four {background-color: orange;}
+#five {background-color: red;}

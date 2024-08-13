@@ -20,7 +20,7 @@ a::after {
     position: absolute;
     width: 100%;
     height: 0.1em;
-    background-color: white;
+    background-color: #00000000;
     left: 0;
     bottom: 0em;
     content: "";
@@ -46,7 +46,7 @@ a:hover::after {
     background-color: white;
     margin-bottom: 1vw;
     position: relative;
-    transition: opacity 500ms;
+    transition: opacity 500ms, background-color 500ms;
     a {
         height: 100%;
         width: 100%;
