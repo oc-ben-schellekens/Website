@@ -89,68 +89,138 @@
         height: 80%;
         width: 10%;
     }
-    #three {}
-    #four {}
-    #five {}
-}
-
-.main[data-block-layout="3"] {
-    #one {}
-    #two {}
-    #three {}
-    #four {}
-    #five {}
-}
-
-.main[data-block-layout="4"] {
-    #one {}
-    #two {}
-    #three {}
-    #four {}
-    #five {}
-}
-
-.main[data-block-layout="test"] {
-    #one {
-        left: 0%;
-        top: 0%;
-        height: 0%;
-        width: 0%;
-    }
-    #two {
-        left: 0%;
-        top: 0%;
-        height: 0%;
-        width: 0%;
-    }
     #three {
-        left: 0%;
-        top: 0%;
-        height: 0%;
-        width: 0%;
+        left: 60%;
+        top: 20%;
+        height: 20%;
+        width: 40%;
     }
     #four {
-        left: 0%;
-        top: 0%;
-        height: 0%;
-        width: 0%;
+        left: 70%;
+        top: 40%;
+        height: 30%;
+        width: 20%;
     }
     #five {
         left: 0%;
         top: 0%;
-        height: 0%;
-        width: 0%;
+        height: 30%;
+        width: 30%;
     }
 }
 
-.block {
-    transition: left 500ms, top 500ms, height 500ms, width 500ms;
-    position: absolute;
-    cursor: pointer;
+.main[data-block-layout="3"] {
+    #one {
+        left: 0%;
+        top: 0%;
+        height: 100%;
+        width: 60%;
+    }
+    #two {
+        left: 60%;
+        top: 0%;
+        height: 100%;
+        width: 40%;
+    }
+    #three {
+        left: 0%;
+        top: 30%;
+        height: 70%;
+        width: 40%;
+    }
+    #four {
+        left: 0%;
+        top: 50%;
+        height: 50%;
+        width: 30%;
+    }
+    #five {
+        left: 0%;
+        top: 70%;
+        height: 30%;
+        width: 20%;
+    }
 }
 
-#one {background-color: green;}
-#two {background-color: lime;}
-#three {background-color: blue;}
-#four {background-color: orange;}
-#five {background-color: red;}
+.main[data-block-layout="4"] {
+    #one {
+        left: 30%;
+        top: 70%;
+        height: 30%;
+        width: 70%;
+    }
+    #two {
+        left: 80%;
+        top: 20%;
+        height: 80%;
+        width: 20%;
+    }
+    #three {
+        left: 0%;
+        top: 0%;
+        height: 20%;
+        width: 100%;
+    }
+    #four {
+        left: 0%;
+        top: 20%;
+        height: 80%;
+        width: 30%;
+    }
+    #five {
+        left: 30%;
+        top: 20%;
+        height: 50%;
+        width: 50%;
+    }
+}
+
+.main[data-corner-rounding="0"] {
+    .block {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    } 
+}
+
+.main[data-corner-rounding="1"] {
+    .block {
+        border-top-left-radius: 50px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 50px;
+    } 
+}
+
+.main[data-corner-rounding="2"] {
+    .block {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    } 
+}
+
+.main[data-corner-rounding="3"] {
+    .block {
+        border-top-left-radius: 50;
+        border-top-right-radius: 50;
+        border-bottom-left-radius: 50;
+        border-bottom-right-radius: 50;
+    } 
+}
+.block {
+    transition: all 500ms;
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; width: 0; height: 0;
+    border-top-left-radius: 0; border-top-right-radius: 0;
+    border-bottom-left-radius: 0; border-bottom-right-radius: 0; 
+}
+
+#one {background-color: #E1D89F;}
+#two {background-color: #CD8B76;}
+#three {background-color: #C45BAA;}
+#four {background-color: #7D387D;}
+#five {background-color: #27474E;}
