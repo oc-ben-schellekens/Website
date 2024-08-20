@@ -1,6 +1,5 @@
 const footer = document.getElementById("footer")
 
-
 footer.addEventListener("click", (event) => {
     switch (footer.dataset.open) {
         case "0":
@@ -14,4 +13,3 @@ footer.addEventListener("click", (event) => {
             break;
     }
 });
-
