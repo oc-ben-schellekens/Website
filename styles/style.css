@@ -68,6 +68,8 @@ a:hover::after {
 
 nav h1 {
     width: fit-content;
+    position: absolute;
+    z-index: 530994983  ;
 }
 
 .links {

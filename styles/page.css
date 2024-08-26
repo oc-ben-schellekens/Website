@@ -5,15 +5,15 @@ body {
 }
 
 main {
-    width: 75vw;
+    width: 90vw;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: max-content;
+    gap: 1rem;
     grid-template-areas: 
     'title title title title title'
     'content content content image image'
+    'divider divider divider divider divider'
+    'image2 image2 content2 content2 content2'
     ;
-    gap: 10px;
 }
 
 .title {
@@ -25,10 +25,24 @@ main {
 
 .content {
     grid-area: content;
+    padding: 5px;
 }
 
 .image {
     grid-area: image;
+}
+
+.content2 {
+    padding: 5px;
+    grid-area: content2;
+}
+
+.image2 {
+    grid-area: image2;
+}
+
+.divider {
+    grid-area: divider;
 }
 
 h1 {
@@ -37,8 +51,44 @@ h1 {
 }
 
 img {
-    aspect-ratio: 16/9;
-    width: 36em;
-    height: 24em;
+    width: 20em;
+    height: 14em;
     box-shadow: 7.5px 7.5px 0px orange;
+}
+nav {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    background-color: white;
+}
+
+a{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    width: fit-content;
+    display: block;
+}
+
+a::after {
+    position: absolute;
+    width: 100%;
+    height: 0.1em;
+    background-color: black;
+    left: 0;
+    bottom: 0em;
+    content: "";
+    transform-origin: left;
+    scale: 1 1;
+    display: block;
+    transition: scale 500ms, background-color 500ms;
+}
+
+a:hover::after {
+    scale: 0 1;
+    transform-origin: right;
+}
+
+p {
+    font-size: 1.25rem;
 }
