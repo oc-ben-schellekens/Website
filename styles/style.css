@@ -37,8 +37,8 @@ a:hover::after {
 }
 
 .pagelink {
-    font-size: clamp(3rem, 7.5vw, 59.5rem);
-    height: clamp(3.5rem, 8vw, 60rem);
+    font-size: clamp(3vh, 7.5vw, 14vh);
+    height: clamp(3.5vh, 8vw, 15vh);
     font-weight: 700;
     text-wrap: nowrap;
     width: fit-content;
@@ -66,10 +66,10 @@ a:hover::after {
     }
 }
 
-nav h1 {
-    width: fit-content;
+nav{
+    margin-left: 10px;
     position: absolute;
-    z-index: 530994983  ;
+    z-index: 10;
 }
 
 .links {
